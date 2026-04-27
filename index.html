@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+
+<!-- https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/ 
+	also using robots.txt and spawning ai.txt in root directory -->
+<meta name="robots" content="noai, noimageai">
+
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, web development, small web, alternative internet, game development, graphic design, 3d, data privacy, edu email, edu domain">
+<meta name="description" content="Free and low-cost educational resources and recommendations for web development, game development, graphics and multimedia, data privacy, and the small web.">
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.upset.dev/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+<!-- Pure CSS https://pure-css.github.io/ -->
+
+<link rel="preload" href="style-purple.css">
+<link rel="preload" href="style-lightgray.css">
+<link rel="preload" href="style-darkgray.css">
+<link rel="preload" href="style-nightgray.css">
+<link rel="preload" href="style-night.css">
+
+<link rel="stylesheet" href="style-purple.css">
+<link id="colortheme" rel="stylesheet" href="style-purple.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="human-json" href="human.json">
+<!-- https://codeberg.org/robida/human.json -->
+
+<script src="color-theme.js"></script>
+
+<title>Practical Technology</title>
+
+</head>
+
+<!-- onload for color theme switch -->
+<!-- <body onload="setmainpage()"> -->
+<body>
+<script>setmainpage()</script>
+
+<div class="pure-g">
+
+<div class="pure-u-1-1">
+<div class="box-content">
+<!-- <p>
+<a onclick="clicktocolorchange('style-blue.css')" onmouseover="clicktocolorchange('style-blue.css')" class="colorbox blue" href=""> </a> 
+<a onclick="clicktocolorchange('style-purple.css')" onmouseover="clicktocolorchange('style-purple.css')" class="colorbox purple" href=""> </a> 
+<a onclick="clicktocolorchange('style-red.css')" onmouseover="clicktocolorchange('style-red.css')" class="colorbox red" href=""> </a> 
+<a onclick="clicktocolorchange('style-lightgray.css')" onmouseover="clicktocolorchange('style-lightgray.css')" class="colorbox lightgray" href=""> </a> 
+<a onclick="clicktocolorchange('style-darkgray.css')" onmouseover="clicktocolorchange('style-darkgray.css')" class="colorbox darkgray" href=""> </a> 
+<a onclick="clicktocolorchange('style-nightgray.css')" onmouseover="clicktocolorchange('style-nightgray.css')" class="colorbox nightgray" href=""> </a> 
+<a onclick="clicktocolorchange('style-night.css')" onmouseover="clicktocolorchange('style-night.css')" class="colorbox night" href=""> </a>
+</p> -->
+<p class="icon-color-theme-container">
+<!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m19 12.13l-6.061 6.077c-1.783 1.788-2.675 2.682-3.77 2.78q-.27.025-.543 0c-1.094-.098-1.986-.992-3.769-2.78l-2.02-2.026a2.87 2.87 0 0 1 0-4.052m16.163 0l-8.082-8.103M19 12.129H2.837m8.081-8.103l-8.081 8.103m8.081-8.103L8.898 2M22 20a2 2 0 1 1-4 0c0-1.105 2-3 2-3s2 1.895 2 3"/></svg></span> -->
+<a onclick="clicktocolorchange('style-purple.css')" onmouseover="clicktocolorchange('style-purple.css')" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g class="icon-color-theme" fill="none"><path d="M17 12a5 5 0 1 1-10 0a5 5 0 0 1 10 0Z"/><path stroke-linecap="round" d="M12 2v1.5m0 17V22m7.07-2.929l-1.06-1.06M5.99 5.989L4.928 4.93M22 12h-1.5m-17 0H2m17.071-7.071l-1.06 1.06M5.99 18.011l-1.06 1.06"/></g></svg></a>
+<a onclick="clicktocolorchange('style-lightgray.css')" onmouseover="clicktocolorchange('style-lightgray.css')" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="icon-color-theme" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M17.478 10h.022a4.5 4.5 0 1 1 0 9H7a5 5 0 0 1-.48-9.977M17.478 10q.021-.247.022-.5a5.5 5.5 0 0 0-10.98-.477M17.478 10a5.5 5.5 0 0 1-1.235 3M6.52 9.023Q6.757 9 7 9c1.126 0 2.165.372 3 1"/></svg></a> 
+<a onclick="clicktocolorchange('style-darkgray.css')" onmouseover="clicktocolorchange('style-darkgray.css')" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="icon-color-theme" fill="none" stroke-linecap="round" stroke-linejoin="round" d="m12.5 15l-1 2m5.5-2l-1 2m-2.5 2l-1 2M8 15l-1 2m2 2l-1 2m9.478-12.102h.022c2.485 0 4.5 1.98 4.5 4.423A4.4 4.4 0 0 1 20 17m-2.522-8.102q.021-.243.022-.492C17.5 5.421 15.038 3 12 3C9.123 3 6.762 5.171 6.52 7.937m10.958.961a5.33 5.33 0 0 1-1.235 2.949M6.52 7.937C3.984 8.175 2 10.274 2 12.83a4.88 4.88 0 0 0 2 3.932m2.52-8.825q.237-.022.48-.022c1.126 0 2.165.366 3 .983"/></svg></a> 
+<a onclick="clicktocolorchange('style-nightgray.css')" onmouseover="clicktocolorchange('style-nightgray.css')" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g class="icon-color-theme" fill="none" stroke-linejoin="round"><path stroke-linecap="round" d="M17.478 12h.022a4.5 4.5 0 1 1 0 9H7a5 5 0 0 1-.48-9.977M17.478 12q.021-.247.022-.5a5.5 5.5 0 0 0-10.98-.477M17.478 12a5.5 5.5 0 0 1-1.235 3M6.52 11.023Q6.757 11 7 11c1.126 0 2.165.372 3 1"/><path d="M11 5.53a4.6 4.6 0 0 0-.525-1.41A4.53 4.53 0 0 0 7.777 2a3.58 3.58 0 0 1-1.74 3.53a3.505 3.505 0 0 1-3.897-.243a4.6 4.6 0 0 0 .47 3.42A4.53 4.53 0 0 0 6.5 11"/></g></svg></a> 
+<a onclick="clicktocolorchange('style-night.css')" onmouseover="clicktocolorchange('style-night.css')" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="icon-color-theme" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M21.5 14.078A8.557 8.557 0 0 1 9.922 2.5C5.668 3.497 2.5 7.315 2.5 11.873a9.627 9.627 0 0 0 9.627 9.627c4.558 0 8.376-3.168 9.373-7.422"/></svg></a>
+</p>
+</div>
+</div>
+
+<div class="pure-u-1-1 pure-u-md-4-5">
+<div class="box-content">
+<h1>Practical Technology</h1>
+<p>Free and low-cost educational resources and recommendations for web development, game development, graphics and multimedia, data privacy, and the small web. <a href="about.html">From a game developer</a>.</p>
+</div>
+</div>
+
+<!-- <div class="pure-u-1 pure-u-md-1-5">
+<h1>...</h1>
+<p>...</p>
+</div> -->
+
+<div class="pure-u-1-1">
+<hr />
+</div>
+
+</div> <!-- pure-g -->
+
+<div class="pure-g">
+
+<div class="pure-u-1-1">
+<div class="box-content">
+<h2>Learn To Make Your Own Website Today</h2>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-4-5">
+<div class="box-content">
+<p>Even if you've never used HTML before, you can <a href="tutorial-html/index.html">Make Your First Webpage With HTML In 5 Minutes</a>.</p>
+<p>After that, you can <a href="tutorial-webpage/index.html">Make & Publish Your First Website With HTML & CSS In 30 Minutes</a>.</p>
+</div>
+</div>
+
+<!-- <div class="pure-u-1 pure-u-md-1-5">
+<p>...</p>
+</div> -->
+
+<div class="pure-u-1-1">
+<hr />
+</div>
+
+</div> <!-- pure-g -->
+
+<div class="pure-g">
+
+<div class="pure-u-1-1">
+<div class="box-content">
+<h2>Recommendations</h2>
+</div>
+</div>
+
+<!--
+
+<p><a href="https://">...</a> - ...</p>
+
+-->
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Web Development</h3>
+<p><a href="https://htmlforpeople.com/">HTML For People</a> - Free online book teaching HTML. Fun and beginner-friendly.</p>
+<p><a href="https://internetingishard.netlify.app/">Interneting Is Hard</a> - Free online tutorials for HTML and CSS, with beautifully illustrated diagrams.</p>
+<p><a href="https://www.w3schools.com/">W3Schools</a> - Free online tutorials for HTML, CSS, PHP, Javascript, and more. Straightforward and self-paced with a built-in interface for testing code.</p>
+<p><a href="https://www.theodinproject.com/">Odin Project</a> - Free full-stack web development online courses for HTML, CSS, Javascript, Ruby, databases, and more.</p>
+<p><a href="https://pure-css.github.io/">Pure CSS</a> - Free minimalist modular CSS template for grid-based layouts. This website uses Pure CSS.</p>
+<p><a href="https://solaria.neocities.org/guides/jscheats">Cheaters Javascript</a>, <a href="https://solaria.neocities.org/guides/themeswitch">CSS & JS Theme Switchers</a> - Beginner-friendly guides by <a href="https://solaria.neocities.org/">Solaria</a>.</p>
+<p><a href="https://phpforpeople.com/">PHP For People</a> - Free online book teaching PHP, also fun and beginner-friendly.</p>
+<p><a href="https://spencermortensen.com/articles/email-obfuscation/">Email address obfuscation: What works in 2026?</a> - If you post your email on your website, protect it from spammers. This website uses one of the methods from here.</p>
+<p>Fast text/code editors: <a href="https://www.sublimetext.com/">Sublime Text</a> is what I use and has an unlimited free trial, <a href="https://lap.dev/lapce/">Lapce</a> is free and open source.</p>
+<p><a href="https://web-check.xyz/">Web Check</a> - Free tool for inspecting a website's IP, SSL, DNS, cookies, whois, etc. Useful for checking your own website.</p>
+<p><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed “AI” Models by Scraping Your Website</a> - A guide for to blocking AI scrapers using robots.txt, .htaccess, and more.</p>
+<p><a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49">32-Bit Cafe Resources List</a> - Plenty of resources for webmastery, coding, accessibility, and more.</p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Web Styling & UI</h3>
+<p><a href="https://modernfontstacks.com/">Modern Font Stacks</a> - Copy/paste CSS font stacks using common system fonts, classified by typography style.</p>
+<p><a href="https://upset.dev/fonts">fonts.upset.dev</a> - If you use Google fonts, replace "fonts.googleapis.com" with "fonts.upset.dev" in your Google font link so that Google won't track you through its fonts. I did the same for this website!</p>
+<p><a href="https://www.realtimecolors.com/">Realtime Colors</a> - Free live preview of website typography and color palette. You can change the color and font styling and see changes reflected in real-time. <a href="https://coolors.co/visualizer">Coolors Palette Visualizer</a> is another one that does this for color palettes. <a href="https://huemint.com/">Huemint Palette Generator</a> also does this, and generates nice color palettes too.</p>
+<p>Color pickers: <a href="https://htmlcolorcodes.com/">HTML Color Codes Picker</a>, , <a href="https://www.fffuel.co/cccolor/">Cccolor Picker</a>, <a href="https://www.nero.com/eng/webservices/nero-htmlcolorpicker/?vlang=us">Nero Color Picker & Converter</a>.</p>
+<p>CSS visual effects: <a href="https://cssgradient.io/">CSS Gradient</a>, <a href="https://uigradients.com/">uiGradients</a>, <a href="https://webcode.tools/css-generator/box-shadow">CSS Box Shadow Generator</a>, <a href="https://getcssscan.com/css-box-shadow-examples">CSS Box Shadow Examples</a></p>
+<p><a href="https://icon-sets.iconify.design/">Iconify Free Icon Collections</a>, <a href="https://publicicons.lllllllllllllllll.com/">Public Domain Icons</a>, <a href="https://www.rawpixel.com/board/539757/public-domain-icons">CC0 Vintage Illustrations & Icons</a>. I'm using <a href="https://icon-sets.iconify.design/hugeicons/">Huge Icons</a>.</p>
+<p><a href="https://www.toptal.com/designers/htmlarrows/arrows/">HTML Symbols, Entities, & Codes</a> - Cheat sheet for HTML symbols such as &#10172; &#8750; &#189; &#x2042; &#9789; &#10084; &#10048; &#10036;</p>
+<p><a href="https://www.quackit.com/character_sets/emoji/emoji_v16.0/unicode_emoji_v16.0_characters_all.cfm">Emoji List & Codes</a></p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Web Hosting & Domain Registrars</h3>
+<p><a href="https://billing.spartanhost.net/aff.php?aff=2834">Spartan Host</a> - Cheap shared hosting plans with up-front pricing starting at around $3 per month, same price upon renewal.</p>
+<p><a href="https://www.nearlyfreespeech.net/">Nearly Free Speech</a> - Cheap pay-for-what-you-use hosting.
+<p><a href="https://wasmer.io/">Wasmer</a> and <a href="https://tiiny.host/">tiiny</a>- Free, quick-deploy web hosts for static websites. Free websites hosted by tiiny will have a tiiny logo banner at the bottom.</p>
+<p><a href="https://neocities.org/">Neocities</a> and <a href="https://nekoweb.org/">Nekoweb</a> - Free, beginner-friendly web hosts with fun communities.</p>
+<p><a href="https://njal.la/">Njalla</a> - Privacy-first domains, VPS hosting, and VPN. Starting at around €15 yearly for domains, €15 montly for VPS, €5 for VPN.</p>
+<p>I don't recommend webhosts like Hostinger or Namecheap which lure you in with cheap promo rates, which then renew at double or triple the price. I prefer straightforward, up-front pricing.</p>
+<p><a href="https://regery.com/en?pr=gigcmyd">Regery</a> - Straightforward domain registrar with whois privacy and email forwarding.</p>
+<p><a href="https://tld-list.com/">TLD List</a> - Domain registrar price comparison.</p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Web Publishing</h3>
+<p><a href="https://mmm.page/">Mmm</a> - Beautiful, playful drag-and-drop websites. Good free tier; upgrades start at around $36 / year.</p>
+<p><a href="https://bearblog.dev/">Bear</a> - Minimalist blogging platform. Great free tier; optional upgrade (mostly to support the site) at around $50 / year.</p>
+<p><a href="https://pika.page/">Pika</a> - Minimalist blogging platform. Free up to 50 posts; upgrades start at around $60 / year.</p>
+<p><a href="https://www.craft.do/">Craft</a> - More of a notes/docs app like Notion, but it makes it easy to quickly publish a nicely-styled document online. I like that I can edit offline, and I can edit from both desktop and mobile. I use it all the time for things like event invitations or shared notes that I want to look more presentable than Google Docs. Good free tier; upgrades start at around $5 / month.</p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Game Development Using Godot</h3>
+<p><a href="https://godotengine.org/">Godot</a> - Free, open source game engine. This is what I use, it's lightweight yet powerful and the community is very helpful.</p>
+<p><a href="https://gdquest.github.io/learn-gdscript/">GDQuest</a> - Free, interactive GDscript tutorials.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL9FzW-m48fn3H1URoqV6QorDpszCBIwt7">Godot 4 Action RPG</a> - Free step-by-step tutorial series by Heartbeast on Youtube.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLIU3tIGGFHvY9WPRiC7F72FSCdMbY3G1J">Godot 101</a> - Free tutorial series about Godot fundamentals by SDG Games on Youtube. The one about <a href="https://www.youtube.com/watch?v=RM_ExxV-0Qo">every variant in Godot</a> was especially helpful for me as someone without a formal background in computer science.</p>
+<p><a href="https://www.youtube.com/@godotneers/">Godot Tutorials</a> - Free tutorials about programming, shaders, UI, particles, saving, and more, by Godotneers on Youtube.</p>
+<p><a href="https://www.youtube.com/@queblegamedevelopment4143">Godot Tips</a> - Free, handy Godot tips and tricks by Queble on Youtube.</p>
+<p><a href="https://theduriel.github.io/Godot/Saving-and-Loading">Saving and Loading</a> - Free primer on saving and loading by duriel.</p>
+<p><a href="https://github.com/godotengine/awesome-godot">Awesome Godot</a> - A list of free games, plug-ins, add-ons, and scripts for Godot.</p>
+<p><a href="https://github.com/jonathanlake/godot-theme-template">Godot Theme Template</a> - Free UI theme template for Godot.</p>
+<p><a href="https://godotshaders.com/">Godot Shaders</a> - Free shader scripts for Godot.</p>
+</div>
+</div>
+
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Game Development Resources & Tools</h3>
+<p><a href="http://www.costik.com/">Greg Costikyan</a> - Veteran game designer. His website includes his writings on game design. I especially enjoyed his <a href="http://www.costik.com/evdesnts.html">design notes on Evolution: The Game Of Intelligent Life</a>, a game which I loved so much as a kid.</p>
+<p><a href="https://itch.io/">itch.io</a> - Free platform for indie games, game jams, and game assets. I post <a href="https://mellowminx.itch.io/">my games</a> here too.</p>
+<p><a href="https://kenney.nl/">CC0 Assets by Kenney</a> - Tons of free 2D, 3D, audio, and UI game assets.</p>
+<p><a href="https://freesound.org/">Freesound</a> - Great for finding CC0 sound effects. I use this a lot.</p>
+<p>Free JSON utilities: <a href="https://jsonviewer.arianv.com/">JSON Viewer</a>, <a href="https://jsoneditor.io/">JSON Editor</a>, <a href="https://jsoncrack.com/">JSON Graph Viewer</a></p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Graphic Design, Pixel Art, 3D</h3>
+<p><a href="https://www.affinity.studio/">Affinity</a> - Free graphic software with raster and vector editing. Free account registration required.</p>
+<p><a href="https://graphite.rs/">Graphite</a> - Free online procedural graphic editor.</p>
+<p><a href="https://www.photopea.com/">Photopea</a> - Free online graphic editor.</p>
+<p><a href="https://github.com/Orama-Interactive/Pixelorama">Pixelorama</a> - Free, open source pixel art editor.</p>
+<p><a href="https://www.piskelapp.com/">Piskel</a> - Free online pixel art editor.</p>
+<p><a href="https://www.blender.org/">Blender</a> - Free open source 3D editor. Lightweight yet powerful. Like Godot, this has a large and helpful community.</p>
+<p><a href="https://www.blockbench.net/">Blockbench</a> - Free low-poly 3D model editor. Download and online versions available.</p>
+<p><a href="https://www.dimensions.com/">Dimensions</a> - Reference database for standard measurements of humans, objects, and spaces. Helpful for 3D modeling. Measurements are free; upgrade for about $90 / year  to download technical drawings and 3D models.</p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Audio, Video, GIF</h3>
+<p><a href="https://www.audacityteam.org/">Audacity</a> - Free audio editor.</p>
+<p><a href="https://www.bfxr.net/">bfxr</a> - Free online sound effect creator.</p>
+<p><a href="https://kdenlive.org/">kdenlive</a> - Free open source video editor.</p>
+<p><a href="https://www.blackmagicdesign.com/products/davinciresolve">DaVinci Resolve</a> - Professional cinematic video editing, color grading, effects, and more, with an excellent free version. <a href="https://www.youtube.com/@CreativeVideoTips/videos">Creative Video Tips on Youtube</a> has great tutorials for this.</p>
+<p><a href="https://github.com/lihaoyun6/QuickRecorder">Quick Recorder</a> - Free open source screen recorder with mic and system audio for Mac.</p>
+<p><a href="https://www.cockos.com/licecap/">Licecap</a> - Free animated GIF screen recorder. Handy for making game screencap GIFs.</p>
+<p><a href="https://gif.ski/">Gifski</a> - Free video-to-animated-GIF converter.</p>
+<p><a href="https://ezgif.com/">Ezgif</a> - Free online GIF maker. Plenty of other nifty tools too for editing and converting images, videos, etc.</p>
+</div>
+</div>
+
+<!--
+
+<p><a href="https://">...</a> - ...</p>
+
+-->
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Data Privacy</h3>
+<p><a href="https://proton.me/">Proton</a> - Privacy-first email, VPN, cloud storage, docs, sheets, calendar, password manager, etc. I love the password manager's email alias generation feature so I never give out my real email to random websites anymore. Good free tier; upgrades start at around $4 / month.</p>
+<p><a href="https://duckduckgo.com/">Duckduckgo</a> - Free ad-free search engine and browser.</p>
+<p><a href="https://mullvad.net/">Mullvad</a> - Extremely private VPN, they don't even ask for your email. Top-up at €5 / month, no subscription, super straightforward. They also have a free private browser.</p>
+<p><a href="https://windscribe.com/">Windscribe</a> - If you want a VPN subscription, this one is around $30 / year, and also doesn't require an email address.</p>
+<p><a href="https://kagi.com/">Kagi</a> - Ad-free search engine, starts at $5 / month.</p>
+<p><a href="https://wiby.me/">Wiby</a> - Free search engine exclusively for human-curated websites.</p>
+<p><a href="https://marginalia-search.com/">Marginalia</a> - Free, open source, AI-free, privacy-first search engine.</p>
+<p><a href="https://cobalt.tools/">Cobalt</a> - Free tool for saving video, audio, and images from Facebook, Instagram, Bilibili, etc. No ads, trackers, or paywalls. Note that Youtube is not supported, but you may be able to find <a href="https://instances.cobalt.best/">another Cobalt instance that does</a>, or try the $20 app I use for this, <a href="https://software.charliemonroe.net/downie/">Downie</a>.</p>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Small Web 101</h3>
+
+<p><a href="https://neustadt.fr/essays/the-small-web/">Rediscovering The Small Web</a> - Explaining the small web in the context of Internet history: <i>"Most websites today are built like commercial products by professionals and marketers, optimised to draw the largest audience, generate engagement and 'convert'. But there is also a smaller, less-visible web designed by regular people to simply to share their interests and hobbies with the world. A web that is unpolished, often quirky but often also fun, creative and interesting."</i></p>
+
+<p><a href="https://why.mmm.dev/">Why mmm</a> - Ongoing thread about making the Internet more fun and human: <i>"We have polished, optimized, & standardized the life out of the internet, & it doesn’t feel quite as fun and alive anymore. A kind of nowhere-suburbification... But why does this matter? Websites are so... measly. And it wouldn't — if the internet were just a container of information. But it's more, right? We spend so much time living here, that maybe we should take this seriously. Make better places n stuff..."</i></p>
+
+<p><a href="https://benhoyt.com/writings/the-small-web-is-beautiful/">The Small Web Is Beautiful</a> - A primer on the small web and resources for small web development: <i>"I believe that small websites are compelling aesthetically, but are also important to help us resist selling our souls to large tech companies. In this essay I present a vision for the 'small web' as well as the small software and architectures that power it."</i></p>
+
+<p><a href="https://ar.al/2020/08/07/what-is-the-small-web/">What Is The Small Web?</a> - A quick introduction to the small web, and to <a href="https://codeberg.org/kitten/app#kitten">a small web development kit</a>: <i>"The Small Web is for people (not startups, enterprises, or governments). It is also made by people and small, independent organisations (not startups, enterprises, or governments2). On the Small Web, you (and only you) own and control your own home (or homes)."</i></p>
+
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Small Web Projects</h3>
+
+<p><a href="https://osteophage.neocities.org/">Coyote's Link Hub</a> - Loads of useful links and bookmarks related to the small web, web development, creativity, nature, free reading material, and more, neatly organized.</p>
+
+<p><a href="https://solaria.neocities.org/">Solaria's Webspace</a> - Beginner-friendly web development <a href="https://solaria.neocities.org/guides/">guides</a>, <a href="https://solaria.neocities.org/links">links</a>, and more, on this artist's personal website.</p>
+
+<p><a href="https://neatnik.net/">Neatnik</a> - Adam Newbold's small web projects including <a href="https://home.omg.lol/">omg.lol</a>, <a href="https://url.town/">URL Town</a> web directory, and <a href="https://www.neato.pub/">Neato</a> flatfile CMS. I agree with Adam's <a href="https://neatnik.net/ai/">AI-free stance</a>: <i>"I don’t use AI (LLMs, ML, or related tools)... I'm aware that my stubborn insistence on doing things entirely myself may not age well. But I remain committed to the craft of web development, for no other reason than I enjoy it. So I’m going to keep working that way, and enjoying this craft the way I choose to enjoy it."</i></p>
+
+<p><a href="https://codeberg.org/robida/human.json">Human JSON Protocol</a> - A JSON template to self-declare as human, vouch for other humans, and state commitment to avoiding AI-generated content.</p>
+
+<p><a href="https://blog.kagi.com/small-web">Kagi Small Web</a> - Introduction to Kagi's small web explorer.</p>
+
+<p><a href="https://github.com/redecentralize/alternative-internet">Alternative Internet</a> - List of resources and tools for re-decentralizing the Internet.</p>
+
+<p><a href="https://growyourown.services/">Grow Your Own Services</a> - Resources for building your own websites, social networks, personal clouds, instant messaging, etc.</p>
+
+<p><a href="https://potato.cheap/">The Cheap Web</a> - Ethos and links related to the cheap web-- cheap to maintain, leave, access, participate, explore, contribute.</p>
+
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+<h3>Small Social Media</h3>
+
+<p>Alternative social media I use: <a href="https://tildes.net/">Tildes</a> for mostly nerdy stuff (it's like a minimalist Reddit / forum type platform) and <a href="https://www.pillowfort.social/">Pillowfort</a> for mostly creative stuff (it's like Tumblr / Livejournal). I enjoy the community vibes of both. People generally engage in a thoughtful and pleasant way. I like that these are both ad-free, not corporate-owned, and don't harvest your data. Feeds are chronological rather than algorithmic. Both have a small-to-medium community, so activity there doesn't feel overwhelming, and both are completely user-supported.</p>
+
+<p><a href="https://eev.ee/blog/2016/07/22/on-a-technicality/">On A Technicality</a> - Very helpful read about creating rules for online communities. TLDR: It's best to keep rules broad and unspecific, and allow moderators to make decisions based on their own subjective opinion. Trying to get specific allows for rule lawyering: jerks using technicalities and loopholes to circumvent rules ("oh but what I did wasn't specifically listed in the rules as being disallowed"), and this eventually results in most of the reasonable, active, and nice people quietly leaving the community due to exasperation with said jerks and rule lawyering.</p>
+
+</div>
+</div>
+
+
+
+<div class="pure-u-1 pure-u-md-1-1">
+<div class="box-content">
+<h3>My Favorite Small Websites</h3>
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+
+<p><a href="https://mynoise.net/">myNoise</a> - Free soundscapes by audio engineer Stéphane Pigeon, who's personally recorded and collected thousands of samples of natural sounds, ambient music, and background noise, so you can <a href="https://www.reddit.com/r/MyNoise/comments/9xmof6/introducing_custom_composite_generators/">customize your own personal background sound mix</a>. Funded by user donations. <a href="https://mynoise.net/manifesto.php">No AI</a>. A couple of my fave soundscapes: <a href="https://mynoise.net/NoiseMachines/japaneseGardenSoundscapeGenerator.php">Japanese Garden</a>, <a href="https://mynoise.net/NoiseMachines/dreamingNautilusGenerativeSoundscape.php">Dreaming Nautilus</a>.</p>
+
+<p><a href="https://idlewords.com/">Idle Words</a> - I really enjoy Maciej Cegłowski's blog, especially these entries: <a href="https://idlewords.com/2006/04/argentina_on_two_steaks_a_day.htm">Argentina On Two Steaks A Day</a>, <a href="https://archive.is/NLv1L">Białowieża Forest</a>. His writing is so fun, immersive, and personal.</p>
+
+<p><a href="https://brettterpstra.com/">Brett Terpstra</a> - I go to Brett's blog to learn about cool new apps and other tech things!</p>
+
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+
+<p><a href="https://www.ferryhalim.com/orisinal/">Orisinal by Ferry Halim</a> - Beautiful free online minigames. Happy this is still around after more than 20 years!</p>
+
+<p><a href="https://research.swtch.com/qr/draw/">QR Code Generator</a> - Free <a href="https://research.swtch.com/qart">open source</a> tool for generating QR codes from images. Image is entirely processed locally in the browser and not uploaded to any server. No ads.</p>
+
+<p><a href="https://hackertyper.com/">Hacker Typer</a> - Use this screen to pretend you're a hacker in an action film.</p>
+
+<p><a href="https://sandspiel.club/">Sandspiel</a> - "Falling sand" simulator by <a href="https://maxbittker.com/projects/">Max Bittker, who has a lot of other cool projects</a>.</p>
+
+</div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-3">
+<div class="box-content">
+
+<p><a href="https://visdeurbel.nl/en/">Fish Doorbell</a> - Every spring, you can watch this livestream of an underwater camera in Utrecht to help fish pass through. If you see a fish, press the doorbell on the website to alert the lock keeper.</p>
+
+<p><a href="https://explore.org/fat-bear-week">Fat Bear Week</a> - Every autumn, vote for the brown bear that gained the most weight in preparation for winter in Katmai National Park, Alaska.</p>
+
+<p><a href="https://www.mineralcup.org/">Mineral Cup</a> - An annual competition where you can vote for your favorite crystal.</p>
+
+<p><a href="https://secure-sha.org/bottle/">Historic Glass Bottle Identification & Information Website</a> - An employee of the US Bureau of Land Management singlehandedly created this in 2003 and continues to maintain it after retirement.</p>
+
+<!-- <p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p>
+
+<p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p>
+<p><a href="https://">...</a> - ...</p> -->
+
+</div>
+</div>
+
+<div class="pure-u-1-1">
+<hr />
+</div>
+
+<div class="pure-u-1-1">
+<div class="box-content">
+<h4>This page was last updated 2026-04-22.</h4>
+<h5><a href="#">&#8593; BACK TO TOP</a></h5>
+</div>
+</div>
+
+</div> <!-- pure-g -->
+
+</body>
+
+</html>
